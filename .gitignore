@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# Local test scripts (may contain hardcoded credentials)
+test-*.mjs
