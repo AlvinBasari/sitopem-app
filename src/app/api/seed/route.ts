@@ -52,8 +52,7 @@ export async function GET() {
         .upsert({ 
           id: userId, 
           role: acc.role, 
-          name: acc.name,
-          updated_at: new Date().toISOString()
+          name: acc.name
         });
 
       results.push({ 
