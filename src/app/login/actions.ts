@@ -21,7 +21,7 @@ export async function login(formData: FormData) {
   })
 
   if (error) {
-    redirect('/login?error=Invalid email or password')
+    redirect(`/login?error=${encodeURIComponent(error.message)}`)
   }
 
   if (authData.user) {
